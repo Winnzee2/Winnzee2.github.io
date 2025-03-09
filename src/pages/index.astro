@@ -1,11 +1,41 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="我的个人网站">
+	<main class="container mx-auto px-4 py-8">
+		<h1 class="text-4xl font-bold text-center mb-8">欢迎来到我的个人网站</h1>
+		
+		<section class="mb-12">
+			<h2 class="text-2xl font-semibold mb-4">关于我</h2>
+			<p class="text-lg">
+				这里是我的个人介绍...
+			</p>
+		</section>
+
+		<section class="mb-12">
+			<h2 class="text-2xl font-semibold mb-4">我的项目</h2>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+				<div class="border p-4 rounded-lg">
+					<h3 class="text-xl font-medium mb-2">项目 1</h3>
+					<p>项目描述...</p>
+				</div>
+				<div class="border p-4 rounded-lg">
+					<h3 class="text-xl font-medium mb-2">项目 2</h3>
+					<p>项目描述...</p>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<h2 class="text-2xl font-semibold mb-4">联系我</h2>
+			<p class="text-lg">
+				Email: your.email@example.com<br>
+				GitHub: <a href="https://github.com/yourusername" class="text-blue-500 hover:underline">@yourusername</a>
+			</p>
+		</section>
+	</main>
 </Layout>
